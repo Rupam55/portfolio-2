@@ -12,35 +12,58 @@ body {
 
 /* classes */
 
-.pad{
+.pad {
   padding-left: 10%;
   padding-right: 10%;
 }
-.small_h1{
-  font-size: 1.5rem;
-  font-weight: bolder;
-} 
-.small_p{
-  font-size: 1.0rem;
+.col-4 {
+  padding-left: 0px;
 }
-.small_i{
-  font-size: 1.0rem;
-  text-decoration: none;
-  color: #ffffff;
+.small_h1 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.small_p {
+  font-size: 0.8rem;
+}
+.small_i {
+  font-size: 0.8rem;
+}
+.gen_p {
+  font-size: 1rem;
 }
 
-.pad_2{
-  padding: 0px;
+/*  */
+.hori_menu {
+  list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+}
+.hori_menu li {
+  float: left;
+}
+.hori_menu li a {
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.hori_menu li a:hover {
+  background-color: #01a775ea;
 }
 
 /*  */
 
-.right_bar{
+/*  */
+.right_bar {
   padding-top: 20px;
 }
 
 .up_cov {
-  background-image: url("img2/6742076_preview.png");
+  background: linear-gradient(45deg, #000000 20%, #000000 100%);
   background-position: center;
   background-size: cover;
   top: 0;
@@ -48,14 +71,13 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .cov {
-  background: linear-gradient(45deg, #2f89fc 20%, #00ffbf 100%);
-  /* opacity: .8; */
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 5%;
   width: 90%;
-  height: 100%;
+  height: 100px;
   padding: 10%;
   color: #ffffff;
   font-family: "Megrim", cursive;
@@ -63,29 +85,71 @@ body {
   font-weight: bolder;
 }
 .cov li {
-  padding-top: 20px;
-  padding-right: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 .cov a {
+  text-decoration: none;
+  color: #969696;
+  display: flex;
+}
+.cov a.active p {
   text-decoration: none;
   color: #ffffff;
   display: flex;
 }
-.cov a:hover {
+.cov a.active span {
+  color: rgb(0, 110, 255);
   text-decoration: none;
-  color: aquamarine;
+  display: flex;
+}
+.cov #social {
+  font-size: 18px;
+  /* display: inline-block; */
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 9px 11px;
+  margin: 5px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+.cov #social:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+.cov #social:hover span {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cov a:hover span {
+  color: rgb(0, 110, 255);
+  text-decoration: none;
+}
+.cov a:hover p {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 .bottom_text {
-  position: absolute;
   bottom: 0px;
 }
 
-/*  */
+
+.pad_2{
+  padding: 0px;
+}
+
+
 
 .carde {
   width: 100%;
   padding: 0%;
-  background: linear-gradient(180deg, #2fccfc 0%, #cc5dff 100%);
+  background: linear-gradient(180deg, rgb(1, 134, 223) 95%, rgb(255, 255, 255) 10%);
   text-align: center;
   z-index: 1;
   cursor: pointer;
